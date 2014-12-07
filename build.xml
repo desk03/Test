@@ -29,7 +29,7 @@
     <jar jarfile="${dist}/lib/MyProject-${DSTAMP}.jar" basedir="${build}"/>
   </target>
 
-<target name="test" depends="dist" description="generate the dist" />
+<target name="test" description="generate the dist" />
 
   <target name="clean"
         description="clean up" >
