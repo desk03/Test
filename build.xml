@@ -24,13 +24,17 @@
 	
 	<target name="compile" depends="init" description="compile">
 		<javac srcdir="${src}" destdir="${build}/main" />
+<!--
 		<javac srcdir="${test}" destdir="${build}/test">
 			<classpath>
 				<pathelement location="${junit}" />
 			</classpath>
 		</javac>
+-->
 	</target>
-	
+
+	<target name="test" depends="compile" />
+<!--
 	<target name="test" depends="compile">
 		<junit fork="yes" haltonfailure="true">
 			<classpath refid="classpath.test" />
@@ -42,5 +46,6 @@
 			</batchtest>
 		</junit>
 	</target>
+-->
 	
 </project>
