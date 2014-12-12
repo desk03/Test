@@ -3,7 +3,8 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		System.out.println("Hello world");
-		System.out.println("Toto");
+		SampleAdd add = new SampleAdd();
+		System.out.println(add.add(5, 5));
 	}
 
 }
