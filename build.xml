@@ -22,10 +22,7 @@
 	
 	<target name="compile" depends="init" description="compile">
 		<javac srcdir="${src}" destdir="${build}/main">
-			<classpath>
-				<pathelement location="${junit}" />
-				<pathelement location="${hamcrest}" />
-			</classpath>
+			<classpath refid="classpath.test" />
 		</javac>
 	</target>
 
