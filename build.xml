@@ -5,7 +5,7 @@
 	
 	<property name="src" location="Code/HelloWorld/src" />
 	<property name="build" location="Code/HelloWorld/build" />
-	<property name="junit" location="Code/HelloWorld/lib/junit.jar" />
+	<property name="junit" location="Code/HelloWorld/lib/" />
 	
 	<path id="classpath.test">
 		<pathelement location="${junit}" />
