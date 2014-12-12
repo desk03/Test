@@ -5,10 +5,12 @@
 	
 	<property name="src" location="Code/HelloWorld/src" />
 	<property name="build" location="Code/HelloWorld/build" />
-	<property name="junit" location="Code/HelloWorld/lib/" />
+	<property name="junit" location="Code/HelloWorld/lib/junit.jar" />
+	<property name="hamcrest" location="Code/HelloWorld/lib/hamcrest.core.jar" />
 	
 	<path id="classpath.test">
 		<pathelement location="${junit}" />
+		<pathelement location="${hamcrest}" />
 		<pathelement location="${build}/main" />
 	</path>
 	
@@ -22,6 +24,7 @@
 		<javac srcdir="${src}" destdir="${build}/main">
 			<classpath>
 				<pathelement location="${junit}" />
+				<pathelement location="${hamcrest}" />
 			</classpath>
 		</javac>
 	</target>
