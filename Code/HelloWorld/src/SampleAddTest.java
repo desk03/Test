@@ -4,12 +4,12 @@ import org.junit.Test;
 
 public class SampleAddTest {
 
-	private SampleAdd sampleClass;
-
+	private SampleAdd sample;
+	
 	@Test
-	public void testAdd() {
-		sampleClass = new SampleAdd();
-		Assert.assertEquals(5, sampleClass.add(3, 2));
+	public void test() {
+		sample = new SampleAdd();
+		Assert.assertEquals(sample.add(5, 5), 10);
 	}
 
 }
